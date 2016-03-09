@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/iv_pager"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:padding="1dp"
+        android:scaleType="fitXY"        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/iv_pager"
+        android:text="新闻标题"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+    <TextView 
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_alignBottom="@id/iv_pager"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:text="2015-12-31 18:38"
+        />       
+</RelativeLayout>
